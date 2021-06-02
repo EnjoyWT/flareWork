@@ -2,7 +2,7 @@
  * @Author: JoyWT
  * @Date: 2021-06-01 13:32:39
  * @LastEditors: JoyWT
- * @LastEditTime: 2021-06-02 14:21:11
+ * @LastEditTime: 2021-06-02 14:24:46
  * @version: 1.0
  * @Description: 
  */
@@ -36,10 +36,17 @@ var rpo = gh.getRepo(userName,rpoName);
 // }).catch((error) => {
 //     console.error(error);
 // });
-rpo.writeFile("main", "test/test.js", "a test 3345", "test for file  ").then(function(data){
-        console.log("=======")
-        console.log(data)
-        console.log("=======")
-    }).catch((error) => {
-        console.error(error);
+// rpo.writeFile("main", "test/test.js", "a test 3345", "test for file  ").then(function(data){
+//         console.log("=======")
+//         console.log(data)
+//         console.log("=======")
+//     }).catch((error) => {
+//         console.error(error);
+// });
+rpo.getSha("main", "").then(function(data){
+    console.log("=======")
+    console.log(data.data)
+    console.log("=======")
+}).catch((error) => {
+    console.error(error);
 });
