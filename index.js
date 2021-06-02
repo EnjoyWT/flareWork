@@ -2,19 +2,20 @@
  * @Author: JoyWT
  * @Date: 2021-06-01 13:32:39
  * @LastEditors: JoyWT
- * @LastEditTime: 2021-06-02 13:31:36
+ * @LastEditTime: 2021-06-02 14:21:11
  * @version: 1.0
  * @Description: 
  */
 
 import GitHub from 'github-api';
 import { Base64 } from 'js-base64';
+import token from "./token.js"
 var userName = "EnjoyWT";
 var rpoName = "fileSystem";
 
 // basic auth
 var gh = new GitHub({
-    token: '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'
+    token: token
 });
 
 // var me = gh.getUser("EnjoyWT"); // no user specified defaults to the user for whom credentials were provided
