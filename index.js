@@ -2,7 +2,7 @@
  * @Author: JoyWT
  * @Date: 2021-06-01 13:32:39
  * @LastEditors: JoyWT
- * @LastEditTime: 2021-06-02 14:24:46
+ * @LastEditTime: 2021-06-02 14:29:16
  * @version: 1.0
  * @Description: 
  */
@@ -17,7 +17,7 @@ var rpoName = "fileSystem";
 var gh = new GitHub({
     token: token
 });
-
+console.log(token)
 // var me = gh.getUser("EnjoyWT"); // no user specified defaults to the user for whom credentials were provided
 
 // me.listFollowers().then(function(data){
